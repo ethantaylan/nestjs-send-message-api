@@ -11,6 +11,7 @@ export class SendMessageService {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
         Token: this.token,
       },
       body: JSON.stringify(message),
